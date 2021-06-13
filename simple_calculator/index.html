@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dist/css/main.css" />
+    <title>Calculator</title>
+  </head>
+  <body class="theme1">
+    <main class="calc">
+      <header class="calc__header">
+        <h1 class="calc__header__logo">calc</h1>
+        <div class="calc__header__theme">
+          <span class="calc__header__theme__title">THEME</span>
+          <div class="calc__header__theme__button">
+            <div class="calc__header__theme__button__title">
+              <span>1</span> <span>2</span> <span>3</span>
+            </div>
+            <div class="tw-toggle">
+              <input id="one" name="toggle" type="radio" value="false" />
+              <label for="one" class="toggle"></label>
+              <input id="two" name="toggle" type="radio" value="-1" />
+              <label for="two" class="toggle"></label>
+              <input id="three" name="toggle" type="radio" value="true" />
+              <label for="three" class="toggle"></label>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="calc__display">
+        <input class="calc__display__value" placeholder="0" readonly />
+      </section>
+      <section class="calc__keys__container">
+        <button class="calc__key key" value="7">7</button>
+        <button class="calc__key key" value="8">8</button>
+        <button class="calc__key key" value="9">9</button>
+        <button class="calc__key delete DRbutton" value="DEL">DEL</button>
+
+        <button class="calc__key key" value="4">4</button>
+        <button class="calc__key key" value="5">5</button>
+        <button class="calc__key key" value="6">6</button>
+        <button class="calc__key key" value="+">+</button>
+
+        <button class="calc__key key" value="1">1</button>
+        <button class="calc__key key" value="2">2</button>
+        <button class="calc__key key" value="3">3</button>
+        <button class="calc__key key" value="-">-</button>
+
+        <button class="calc__key key" value=".">.</button>
+        <button class="calc__key key" value="0">0</button>
+        <button class="calc__key key" value="/">/</button>
+        <button class="calc__key key" value="*">x</button>
+
+        <button class="calc__key reset DRbutton" value="RESET">RESET</button>
+        <button class="calc__key equal" value="=">=</button>
+      </section>
+    </main>
+    <script src="script/main.js"></script>
+    <script src="script/app.js"></script>
+  </body>
+</html>

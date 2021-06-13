@@ -1,0 +1,75 @@
+.tw-toggle {
+  width: 80px;
+  height: 30px;
+  border-radius: 30px;
+  position: relative;
+}
+
+.tw-toggle label {
+  display: inline-block;
+  position: relative;
+  background: transparent;
+  z-index: 2;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  top: 5px;
+  left: 5px;
+  cursor: pointer;
+}
+
+.tw-toggle input {
+  position: absolute;
+  height: 0px;
+  z-index: 3;
+  opacity: 0;
+}
+
+.tw-toggle span {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.tw-toggle input[value="false"]:checked ~ span {
+  left: 5px;
+}
+
+.tw-toggle input[value="-1"]:checked ~ span {
+  left: 30px;
+}
+
+.tw-toggle input[value="true"]:checked ~ span {
+  left: 55px;
+}
+
+.theme1 {
+  .tw-toggle {
+    background: $themeOneBackgroundToggleAndKeypad;
+  }
+  .tw-toggle span {
+    background: $themeOneRedKeyBackground;
+  }
+}
+
+.theme2 {
+  .tw-toggle {
+    background: $themeTwoBackgroundToggleAndKeypad;
+  }
+  .tw-toggle span {
+    background: $themeTwoOrangeKeyBackground;
+  }
+}
+
+.theme3 {
+  .tw-toggle {
+    background: $themeThreeScreenBackground;
+  }
+  .tw-toggle span {
+    background: $themeThreeCyanKeyBackground;
+  }
+}

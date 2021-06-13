@@ -1,0 +1,72 @@
+/*Theme-1*/
+/*Main Background*/
+$themeOneBackground: hsl(222, 26%, 31%);
+$themeOneBackgroundToggleAndKeypad: hsl(223, 31%, 20%);
+$themeOneScreenBackground: hsl(224, 36%, 15%);
+
+/*Keys*/
+$themeOneDarkBlueKeyBackground: hsl(225, 21%, 49%);
+$themeOneDarkBluekeyShadow: hsl(224, 28%, 35%);
+/*Red*/
+$themeOneRedKeyBackground: hsl(6, 63%, 50%);
+$themeOneDarkRedkeyShadow: hsl(6, 70%, 34%);
+/*Grayish Orange*/
+$themeOneLightGrayishOrangeKeyBackground: hsl(30, 25%, 89%);
+$themeOneGrayishOrangekeyShadow: hsl(28, 16%, 65%);
+
+/*Text*/
+$themeOneTextWhite: hsl(0, 0, 100%);
+$themeOneTextBlue: hsl(221, 14%, 31%);
+
+.theme1 {
+  background-color: $themeOneBackground;
+}
+
+/*Theme-2*/
+/*Main Background*/
+$themeTwoBackground: hsl(0, 0%, 90%);
+$themeTwoBackgroundToggleAndKeypad: hsl(0, 5%, 81%);
+$themeTwoScreenBackground: hsl(0, 0%, 93%);
+
+/*Keys*/
+$themeTwoDarkModerateCyanKeyBackground: hsl(185, 42%, 37%);
+$themeTwoVeryDarkCyankeyShadow: hsl(185, 58%, 25%);
+/*Orange*/
+$themeTwoOrangeKeyBackground: hsl(25, 98%, 40%);
+$themeTwoDarkOrangekeyShadow: hsl(25, 99%, 27%);
+/*Grayish Orange*/
+$themeTwoLightGrayishYellowKeyBackground: hsl(45, 7%, 89%);
+$themeTwoGrayishOrangekeyShadow: hsl(35, 11%, 61%);
+
+/*Text*/
+$themeTwoTextWhite: hsl(0, 0, 100%);
+$themeTwoTextYellow: hsl(60, 10%, 19%);
+
+.theme2 {
+  background-color: $themeTwoBackground;
+}
+
+/*Theme-3*/
+/*Main Background*/
+$themeThreeBackground: hsl(268, 75%, 9%);
+$themeThreeBackgroundToggleAndKeypad: hsl(268, 71%, 12%);
+$themeThreeScreenBackground: hsl(268, 71%, 12%);
+
+/*Keys*/
+$themeThreeDarkVioletKeyBackground: hsl(281, 89%, 26%);
+$themeThreeVividMagentakeyShadow: hsl(285, 91%, 52%);
+/*Cyan*/
+$themeThreeCyanKeyBackground: hsl(176, 100%, 44%);
+$themeThreeCyankeyShadow: hsl(177, 92%, 70%);
+/*Grayish Orange*/
+$themeThreeVeryDarkVioletKeyBackground: hsl(268, 47%, 21%);
+$themeThreeDarkMagentaKeyShadow: hsl(290, 70%, 36%);
+
+/*Text*/
+$themeThreeTextWhite: hsl(0, 0, 100%);
+$themeThreeTextYellow: hsl(52, 100%, 62%);
+$themeThreeTextBlue: hsl(198, 20%, 13%);
+
+.theme3 {
+  background-color: $themeThreeBackgroundToggleAndKeypad;
+}

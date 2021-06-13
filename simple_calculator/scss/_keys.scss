@@ -1,0 +1,105 @@
+.calc__keys__container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
+  padding: 25px;
+  border-radius: 15px;
+  .calc__key {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 60px;
+    border-radius: 5px;
+    border: none;
+    font-family: "Spartan", sans-serif;
+    cursor: pointer;
+  }
+}
+
+.key {
+  font-size: 28px;
+}
+
+.delete {
+  font-size: 18px;
+}
+
+.reset {
+  font-size: 18px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  width: 100% !important;
+}
+
+.equal {
+  font-size: 20px;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  width: 100% !important;
+}
+
+.theme1 {
+  .calc__keys__container {
+    background-color: $themeOneBackgroundToggleAndKeypad;
+  }
+  .key {
+    background-color: $themeOneLightGrayishOrangeKeyBackground;
+    color: $themeOneTextBlue;
+    box-shadow: 0px 4px 0px 0px $themeOneGrayishOrangekeyShadow;
+  }
+  .DRbutton {
+    background-color: $themeOneDarkBlueKeyBackground;
+    color: $themeOneTextWhite;
+    box-shadow: 0px 4px 0px 0px $themeOneDarkBluekeyShadow;
+  }
+  .equal {
+    background-color: $themeOneRedKeyBackground;
+    color: $themeOneTextWhite;
+    box-shadow: 0px 4px 0px 0px $themeOneDarkRedkeyShadow;
+  }
+}
+
+.theme2 {
+  .calc__keys__container {
+    background-color: $themeTwoBackgroundToggleAndKeypad;
+  }
+  .key {
+    background-color: $themeTwoLightGrayishYellowKeyBackground;
+    color: $themeTwoTextYellow;
+    box-shadow: 0px 4px 0px 0px $themeTwoGrayishOrangekeyShadow;
+  }
+  .DRbutton {
+    background-color: $themeTwoDarkModerateCyanKeyBackground;
+    color: $themeTwoTextWhite;
+    box-shadow: 0px 4px 0px 0px $themeTwoVeryDarkCyankeyShadow;
+  }
+  .equal {
+    background-color: $themeTwoOrangeKeyBackground;
+    color: $themeOneTextWhite;
+    box-shadow: 0px 4px 0px 0px $themeTwoDarkOrangekeyShadow;
+  }
+}
+
+.theme3 {
+  .calc__keys__container {
+    background-color: $themeThreeBackgroundToggleAndKeypad;
+  }
+  .key {
+    background-color: $themeThreeVeryDarkVioletKeyBackground;
+    color: $themeThreeTextYellow;
+    box-shadow: 0px 4px 0px 0px $themeThreeDarkMagentaKeyShadow;
+  }
+  .DRbutton {
+    background-color: $themeThreeDarkVioletKeyBackground;
+    color: $themeThreeTextWhite;
+    box-shadow: 0px 4px 0px 0px $themeThreeVividMagentakeyShadow;
+  }
+  .equal {
+    background-color: $themeThreeCyanKeyBackground;
+    color: $themeThreeTextBlue;
+    box-shadow: 0px 4px 0px 0px $themeThreeCyankeyShadow;
+  }
+}

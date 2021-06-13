@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Spartan", sans-serif;
+  font-size: 32px;
+  height: 100vh;
+}
+
+.calc {
+  width: 375px;
+  padding: 28px;
+  border-radius: 15px;
+}
+
+.theme1 {
+  background-color: $themeOneScreenBackground;
+  .calc {
+    background-color: $themeOneBackground;
+  }
+}
+
+.theme2 {
+  background-color: $themeOneScreenBackground;
+  .calc {
+    background-color: $themeTwoBackground;
+  }
+}
+
+.theme3 {
+  background-color: $themeOneScreenBackground;
+  .calc {
+    background-color: $themeThreeBackground;
+  }
+}
